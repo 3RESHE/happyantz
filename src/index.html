@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="">
+
+
+    <!-- HEADER -->
+    <header id="header" class="bg-white shadow sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="index.html" class="text-lg font-bold"> <img src="HAPPYANTZ.png" width="50px" alt=""></a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-black">Find Jobs</a>
+                <a href="#" class="text-gray-600 hover:text-black">Companies</a>
+                <a href="#" class="text-gray-600 hover:text-black">Resources</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- Updated Sign In Link -->
+                <a href="signup.html" class="text-gray-600 hover:text-black">Sign In</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Your Career Journey Starts Here -->
+    <div>
+        <section class="relative py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-background"></div>
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto relative">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full bg-gray-300 text-sm font-medium text-primary">
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                Over 10,000 jobs from top companies
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight">
+                Your Career Journey
+                <span class="block text-primary">Starts Here</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Connect with opportunities that match your skills and aspirations. Join thousands who've found their dream careers.
+            </p>
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/20 blur-2xl"></div>
+                <div class="relative border-2 p-2 rounded-lg shadow-lg bg-white">
+                <div class="p-0 flex flex-col md:flex-row gap-2">
+                    <div class="flex-1 relative">
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M10 2a8 8 0 0 1 8 8c0 1.64-.47 3.17-1.36 4.5L21 20.86 19.86 22l-4.36-4.36A7.954 7.954 0 0 1 10 18a8 8 0 0 1 0-16zm0 2a6 6 0 0 0 0 12 6 6 0 0 0 6-6c0-3.31-2.69-6-6-6z"></path></svg>
+                    <input type="text" placeholder="Job title or keyword" class="pl-10 h-12 w-full border rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                    </div>
+                    <div class="flex-1 relative">
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 3.87 3.13 7 7 7s7-3.13 7-7c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm-1 14h2v5h-2v-5z"></path></svg>
+                    <input type="text" placeholder="Location" class="pl-10 h-12 w-full border rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                    </div>
+                    <button class="h-12 px-8 text-base bg-black text-white rounded-lg hover:bg-primary-dark">
+                    Search Jobs
+                    </button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <!-- Featured Opportunities -->
+    <div class="bg-gray-50">
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between mb-12">
+                    <div>
+                        <h2 class="text-3xl font-bold">Featured Opportunities</h2>
+                        <p class="text-gray-500">Discover your next career move</p>
+                    </div>
+                    <button class="flex items-center text-gray-700 font-bold hover:text-primary transition">
+                        View all jobs
+                        <svg class="ml-2 h-4 w-4 transition-transform hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Job 1: Senior Developer -->
+                    <div class="p-6 border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary">
+                        <div class="flex gap-4">
+                            <div class="h-16 w-16 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                                <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 10h18M3 14h18M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Senior Developer</h3>
+                                <p class="text-gray-500">TechCorp Inc.</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> $120k - $150k </span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> Full-time </span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> Remote </span>
+                        </div>
+                        <div class="mt-6 pt-6 border-t flex items-center justify-between">
+                            <div class="flex items-center gap-4 text-sm text-gray-500">
+                                <span>San Francisco</span>
+                                <span>•</span>
+                                <span>2 days ago</span>
+                            </div>
+                            <button class="text-primary hover:underline">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job 2: Product Manager -->
+                    <div class="p-6 border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary">
+                        <div class="flex gap-4">
+                            <div class="h-16 w-16 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                                <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4 6h16M4 10h16m-7 4h7m-7 4h7">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Product Manager</h3>
+                                <p class="text-gray-500">InnovateX Solutions</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> $90k - $130k </span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> Full-time </span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> Hybrid </span>
+                        </div>
+                        <div class="mt-6 pt-6 border-t flex items-center justify-between">
+                            <div class="flex items-center gap-4 text-sm text-gray-500">
+                                <span>New York</span>
+                                <span>•</span>
+                                <span>1 week ago</span>
+                            </div>
+                            <button class="text-primary hover:underline">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job 3: UI/UX Designer -->
+                    <div class="p-6 border rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary">
+                        <div class="flex gap-4">
+                            <div class="h-16 w-16 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                                <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M4 4h16v16H4z M9 9h6v6H9z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">UI/UX Designer</h3>
+                                <p class="text-gray-500">CreativeLabs</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> $70k - $100k </span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> Contract </span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded"> Remote </span>
+                        </div>
+                        <div class="mt-6 pt-6 border-t flex items-center justify-between">
+                            <div class="flex items-center gap-4 text-sm text-gray-500">
+                                <span>Los Angeles</span>
+                                <span>•</span>
+                                <span>5 days ago</span>
+                            </div>
+                            <button class="text-primary hover:underline">Apply Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Why Choose JobPortal -->
+    <div class="">      
+            <section class="py-20 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5"></div>
+            <div class="container mx-auto px-4 relative">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">Why Choose JobPortal</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">
+                We're more than just a job board. We're your career partner.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3  gap-8">
+                <!-- Smart Matching -->
+                <div class="relative  group bg-white hover:shadow-lg transition-all duration-300 border rounded-lg p-6">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors"></div>
+                <div class="space-y-4">
+                    <div class="h-12 w-12 rounded-xl bg-gray-300 bg-primary/10 flex items-center justify-center text-primary">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    </div>
+                    <h3 class="font-bold text-xl">Smart Matching</h3>
+                    <p class="text-gray-500">A job matching that understands your unique skills and preferences.</p>
+                </div>
+                </div>
+        
+                <!-- Verified Companies -->
+                <div class="relative group bg-white hover:shadow-lg transition-all duration-300 border rounded-lg p-6">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors"></div>
+                <div class="space-y-4">
+                    <div class="h-12 w-12  rounded-xl bg-gray-300 flex items-center justify-center text-primary">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round"  stroke-linejoin="round"
+                        d="M12 2l9 4-9 4-9-4 9-4zm0 18v-6m0 6v-6m0 6l-8-4m8 4l8-4M4 10l8 4m8-4l-8 4">
+                        </path>
+                    </svg>
+                    </div>
+                    <h3 class="font-bold text-xl">Verified Companies</h3>
+                    <p class="text-gray-500">Every company is vetted to ensure legitimate opportunities.</p>
+                </div>
+                </div>
+        
+                <!-- Career Growth -->
+                <div class="relative group bg-white hover:shadow-lg transition-all duration-300 border rounded-lg p-6">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors"></div>
+                <div class="space-y-4">
+                    <div class="h-12 w-12 rounded-xl bg-gray-300 bg-primary/10 flex items-center justify-center text-primary">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17 20h5v-5m-10 5H7v-5m0 0V9h10v6m-5-6V4m0 0H9m3 0h3">
+                        </path>
+                    </svg>
+                    </div>
+                    <h3 class="font-bold text-xl">Career Growth</h3>
+                    <p class="text-gray-500">Access mentorship, resources, and networking opportunities.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- How It Works -->
+    <div class="bg-gray-50">      
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center space-y-4 mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold">How It Works</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">Your journey to success in three simple steps</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute top-1/2 left-0 w-full h-1 bg-primary/20"></div>
+                    <div class="relative grid md:grid-cols-3 gap-12">
+                        
+                        <!-- Step 1 -->
+                        <div class="relative bg-white p-6 text-center space-y-4 shadow-lg rounded-lg">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-sm font-bold px-3 py-1 rounded-full">
+                                01
+                            </div>
+                            <div class="h-20 w-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                                <svg class="h-12 w-12 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A9 9 0 1118.878 5.122M15 12H9m0 0h3m-3 0h3m-3 0v3m3-3v3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-xl">Create Profile</h3>
+                            <p class="text-gray-500">Sign up and showcase your skills</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative bg-white p-6 text-center space-y-4 shadow-lg rounded-lg">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-sm font-bold px-3 py-1 rounded-full">
+                                02
+                            </div>
+                            <div class="h-20 w-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                                <svg class="h-12 w-12 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 14L21 3m0 0v4.5m0-4.5h-4.5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-xl">Explore Jobs</h3>
+                            <p class="text-gray-500">Find opportunities that match your expertise</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative bg-white p-6 text-center space-y-4 shadow-lg rounded-lg">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-sm font-bold px-3 py-1 rounded-full">
+                                03
+                            </div>
+                            <div class="h-20 w-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                                <svg class="h-12 w-12 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-xl">Apply & Succeed</h3>
+                            <p class="text-gray-500">Submit applications and track your progress</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- RATING -->
+    <div class="">         
+        <section class="py-20 bg-primary/5 relative    overflow-hidden">
+            <div class="absolute inset-0">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+            </div>
+            <div class="container mx-auto px-4 relative">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                
+                <div class="p-6 bg-white shadow-lg rounded-lg hover:border-primary transition-colors">
+                <div class="text-4xl font-bold text-primary">10K+</div>
+                <div class="text-gray-500 font-medium">Active Jobs</div>
+                </div>
+        
+                <div class="p-6 bg-white shadow-lg rounded-lg hover:border-primary transition-colors">
+                <div class="text-4xl font-bold text-primary">8M+</div>
+                <div class="text-gray-500 font-medium">Job Seekers</div>
+                </div>
+        
+                <div class="p-6 bg-white shadow-lg rounded-lg hover:border-primary transition-colors">
+                <div class="text-4xl font-bold text-primary">4K+</div>
+                <div class="text-gray-500 font-medium">Companies</div>
+                </div>
+        
+                <div class="p-6 bg-white shadow-lg rounded-lg hover:border-primary transition-colors">
+                <div class="text-4xl font-bold text-primary">95%</div>
+                <div class="text-gray-500 font-medium">Success Rate</div>
+                </div>
+        
+            </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Ready to Take the Next Step? -->
+    <div class="bg-gray-50">      
+            <section class="py-20">
+            <div class="container mx-auto px-4">
+            <div class="relative overflow-hidden bg-white shadow-lg rounded-lg p-12 text-center">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5"></div>
+                <div class="relative max-w-3xl mx-auto space-y-8">
+                <h2 class="text-3xl md:text-4xl font-bold">Ready to Take the Next Step?</h2>
+                <p class="text-xl text-gray-500">
+                    Join thousands of professionals who've found their dream careers through JobPortal.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-black text-white px-6 py-3 rounded-lg text-base flex items-center justify-center">
+                    Get Started Now
+                    <svg class="ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                    <button class="border border-primary text-primary px-6 py-3 rounded-lg text-base">
+                    Browse Jobs
+                    </button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t py-12 mt-auto bg-white">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            
+            <div class="space-y-4">
+              <h4 class="font-bold">For Job Seekers</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Browse Jobs</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Career Resources</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Resume Tips</a></li>
+              </ul>
+            </div>
+      
+            <div class="space-y-4">
+              <h4 class="font-bold">For Employers</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Post a Job</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Browse Candidates</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Pricing</a></li>
+              </ul>
+            </div>
+      
+            <div class="space-y-4">
+              <h4 class="font-bold">Company</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Blog</a></li>
+              </ul>
+            </div>
+      
+            <div class="space-y-4">
+              <h4 class="font-bold">Legal</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Privacy Policy</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Terms of Service</a></li>
+                <li><a href="#" class="text-sm text-gray-500 hover:text-primary transition-colors">Cookie Policy</a></li>
+              </ul>
+            </div>
+      
+          </div>
+          <div class="mt-8 pt-8 border-t text-center text-sm text-gray-500">
+            © <span id="year"></span> JobPortal. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+
+    
+
+        <script>
+            // HEADER OPACITY AFTER
+            window.addEventListener("scroll", function () {
+            var header = document.getElementById("header");
+            if (window.scrollY > 50) {
+                header.classList.add("bg-opacity-80", "backdrop-blur-md");
+            } else {
+                header.classList.remove("bg-opacity-80", "backdrop-blur-md");
+            }
+            });
+
+            // FOOTER FULL YEAR
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+  
+      
+</body>
+</html>
