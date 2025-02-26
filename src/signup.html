@@ -1,79 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - JobPortal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100">
-
-    <!-- HEADER -->
-    <header id="header" class="bg-white shadow sticky top-0 z-50 transition-all duration-300">
-        <div class="container mx-auto flex items-center justify-between py-4 px-6">
-            <a href="index.html" class="text-lg font-bold"> <img src="HAPPYANTZ.png" width="50px" alt=""></a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#" class="text-gray-600 hover:text-black">Find Jobs</a>
-                <a href="#" class="text-gray-600 hover:text-black">Companies</a>
-                <a href="#" class="text-gray-600 hover:text-black">Resources</a>
-            </nav>
-            <div class="flex items-center space-x-4">
-                <a href="signup.html" class="text-gray-600 hover:text-black">Sign In</a>
-
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Posting Landing Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-[#F4F6F9]">
+        <div class="">
+    
+        <!-- HEADER -->
+        <header id="header" class="bg-[#FDCB58] shadow sticky top-0 z-50">
+            <div class="container mx-auto flex items-center justify-between py-4 px-6">
+    
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="HAPPYANTZ.png" width="50px" alt="HAPPY ANTZ Logo">
+                    <span class="hidden md:inline text-2xl font-extrabold tracking-wide text-[#3A73C9] drop-shadow-md">
+                        HAPPY <span class="text-[#E78B00]">ANTZ</span>
+                    </span>
+                </a>
+    
+                <!-- Centered Logo Text (Only visible on mobile) -->
+                <span class="text-2xl font-extrabold tracking-wide text-[#3A73C9] drop-shadow-md mx-auto md:hidden">
+                    HAPPY <span class="text-[#E78B00]">ANTZ</span>
+                </span>
+    
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-black transition font-medium">Find Jobs</a>
+                    <a href="#" class="text-gray-700 hover:text-black transition font-medium">Companies</a>
+                    <a href="#" class="text-gray-700 hover:text-black transition font-medium">Resources</a>
+                </nav>
+    
+    
+                <!-- Burger Button (Mobile) -->
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-8 h-8 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
             </div>
-        </div>
-    </header>
+    
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full py-4">
+                <a href="#" class="block px-6 py-2 text-gray-700 hover:text-black">Find Jobs</a>
+                <a href="#" class="block px-6 py-2 text-gray-700 hover:text-black">Companies</a>
+                <a href="#" class="block px-6 py-2 text-gray-700 hover:text-black">Resources</a>
+                
+            </div>
+        </header>
 
     <!-- SIGN UP FORM -->
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="bg-white p-8 shadow-lg rounded-lg w-full max-w-md">
-            <h2 class="text-2xl font-bold mb-6 text-center">Create an Account</h2>
+    <section class="flex justify-center items-center min-h-screen bg-gradient-to-br from-[#D9E6FF] to-[#A6C8FF]">
+        <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+            <h2 class="text-2xl font-bold text-center mb-6 text-[#3A73C9]">Create an Account</h2>
 
             <!-- Google Sign Up -->
             <button class="w-full flex items-center justify-center gap-2 border py-2 rounded-lg hover:bg-gray-100 transition">
                 <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-5 w-5">
                 <span class="text-gray-700 font-medium">Sign up with Google</span>
             </button>
-            
 
-            <div class="relative my-6">
-                <div class="absolute inset-0 flex items-center">
-                    <div class="w-full border-t"></div>
-                </div>
-                <div class="relative flex justify-center text-sm">
-                    <span class="bg-white px-2 text-gray-500">or</span>
-                </div>
+            <div class="my-6 flex items-center">
+                <hr class="flex-grow border-gray-300">
+                <span class="mx-2 text-gray-500 text-sm">or</span>
+                <hr class="flex-grow border-gray-300">
             </div>
 
             <form action="#">
                 <div class="mb-4">
-                    <label class="block text-gray-600 text-sm mb-2">Full Name</label>
-                    <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-600 text-sm mb-2">Email</label>
-                    <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-600 text-sm mb-2">Password</label>
-                    <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    <label class="block text-gray-700">Full Name</label>
+                    <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-[#3A73C9]" required>
                 </div>
 
                 <div class="mb-4">
-                    <label class="block text-gray-600 text-sm mb-2">Confirm Password</label>
-                    <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    <label class="block text-gray-700">Email</label>
+                    <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-[#3A73C9]" required>
                 </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700">Password</label>
+                    <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-[#3A73C9]" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700">Confirm Password</label>
+                    <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-[#3A73C9]" required>
+                </div>
+
                 <a href="landingpage.html" class="w-full block">
-                    <button type="button" class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transitio ">
+                    <button type="button" class="w-full bg-[#FDCB58] text-gray-800 font-bold py-2 rounded-lg hover:bg-[#F0B847] transition">
                         Sign Up
                     </button>
                 </a>
-                
             </form>
 
-            <p class="text-gray-500 text-sm text-center mt-4">Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Sign In</a></p>
+            <p class="text-center text-gray-600 mt-4 text-sm">
+                Already have an account? <a href="login.html" class="text-[#3A73C9] hover:underline font-bold">Sign In</a>.
+            </p>
         </div>
-    </div>
+    </section>
 
+    <!-- JavaScript to Toggle Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
